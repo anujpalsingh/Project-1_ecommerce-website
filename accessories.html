@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8" />
@@ -8,19 +8,15 @@
 
   <link rel="icon" href="img/loop-removebg-preview.png" />
 
-  <link type="text/css" rel="stylesheet" href="styles/sliderstyle.css" />
-
-  <!-- materialize CSS -->
+  <!-- materialize -->
   <link rel="stylesheet" href="styles/materialize.css" />
 
-  <link type="text/css" rel="stylesheet" href="styles/styles.css" />
-
-  <!-- material-icons -->
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- materialize icons -->
   <link rel="stylesheet" href="styles/materializecssicons.css" />
 
-  <!-- Compiled and minified JavaScript for Animation on Scroll-->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
   <!-- font awesome icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -29,10 +25,14 @@
 </head>
 
 <body>
+  <a href="#nav" class="back-to-top"><i class="material-icons">arrow_upward</i>
+  </a>
+
   <nav id="nav">
     <div class="nav-wrapper">
       <a href="index.html" class="brand-logo">loop</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
       <ul class="container center hide-on-med-and-down">
         <li>
           <a href="index.html">Home</a>
@@ -42,6 +42,15 @@
         </li>
         <li>
           <a href="accessories.html">Accessories</a>
+        </li>
+        <li>
+          <form action="" class="search-mobile-form">
+            <div class="search-div">
+              <img src="img/icons/search.svg" class="search-icon" alt="search-icon" width="30px" />
+              <input type="text" class="search-mobile" placeholder="Search by brand" />
+              <img src="img/icons/x.svg" class="close-icon close" alt="close-icon" width="30px" />
+            </div>
+          </form>
         </li>
       </ul>
       <ul class="right">
@@ -64,8 +73,13 @@
             </a>
           </li>
           <li class="logged-out" style="display: none" ;>
-            <a href="#" class="modal-trigger btn black-text" data-target="modal-login">Login</a>
+            <a href="#" class="modal-trigger btn white black-text" data-target="modal-login">Login</a>
           </li>
+          <!-- <li class="logged-out" style="display : none" ;>
+                        <a style="border: 1px solid white;" href="#" class="modal-trigger btn"
+                            data-target="modal-signup">Sign
+                            up</a>
+                    </li> -->
         </ul>
       </ul>
     </div>
@@ -75,7 +89,7 @@
     <li><a href="mobilePhones.html">Mobile</a></li>
     <li><a href="accessories.html">Accessories</a></li>
   </ul>
-  <main id="main">
+  <main id="accessories-main">
     <div id="modal-login" class="modal modal-fixed-footer">
       <div class="modal-content signin-content">
         <form id="login-form">
@@ -113,7 +127,7 @@
               <label for="forget-email">Email address</label>
             </div>
             <small class="errors forget-password-error"></small> <br />
-            <button href="" class="btn submit-btn z-depth-0">
+            <button href="" class="btn submit-btn">
               <i class="material-icons">arrow_forward</i>
             </button>
           </div>
@@ -214,101 +228,13 @@
         </div>
       </div>
     </div>
-    <section>
-      <div id="slider">
-        <figure>
-          <a href="mobilePhones.html"><img src="img/sliders/oneplus8proslide.PNG" alt="Slider" /></a>
-          <a href="mobilePhones.html"><img src="img/sliders/realme6.PNG" alt="Slider" /></a>
-          <a href="mobilePhones.html"><img src="img/sliders/redmi9pro.PNG" alt="Slider" /></a>
-          <a href="mobilePhones.html"><img src="img/sliders/samsungs20.PNG" alt="Slider" /></a>
-        </figure>
-      </div>
-    </section>
-  </main>
-  <!-- <section id="highlight-section">
-    <div class="highlight1">
-      <img src="img/highlight/samsunggalaxynote10.png" alt="mobile-highlight" data-aos="fade-left"
-        data-aos-duration="2500" />
-      <div class="highlight-heading">
-        <h5>Samsung Note 10</h5>
-      </div>
-    </div>
-    <div class="highlight1">
-      <div class="highlight-heading">
-        <h5>OnePlus 7t Pro</h5>
-        <p>Lead with speed</p>
-      </div>
-      <img src="img/highlight/oneplus7tpro.png" alt="mobile-highlight" data-aos="fade-right" data-aos-duration="2500" />
-    </div>
-  </section> -->
-  <main id="grids-main">
-    <h5>Hot Accessories</h5>
-    <hr class="grids-main-hr" />
-    <div class="accessories-highlight-main">
-      <div class="row">
-        <div class="col l3 m4 s6" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="accessories.html">
-            <img src="resources/bluetoothecho.png" class="accessories-highlights" alt="" />
-          </a>
-        </div>
-        <div class="col l3 m4 s6" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="accessories.html">
-            <img src="resources/earphone.png" class="accessories-highlights" alt="" />
-          </a>
-        </div>
-        <div class="col l6 m12 s12" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="accessories.html">
-            <img src="resources/mibandedit.png" class="accessories-highlights" alt="" />
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col l4 m4 s6" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="accessories.html">
-            <img src="resources/headphone2.png" class="accessories-highlights" alt="" />
-          </a>
-        </div>
-        <div class="col l6 m12 s6" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="accessories.html">
-            <img src="resources/realmebuds.PNG" class="accessories-highlights" alt="" />
-          </a>
-        </div>
-        <div class="col l2 s12" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="browse-more">
-            <h5>Browse more</h5>
-            <a href="accessories.html">
-              <img src="img/icons/right-arrow.png" class="accessories-highlights" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
+
+    <!-- here are the products content  -->
+    <div id="accessories">
+      <h5 class="center">ACCESSORIES</h5>
+      <div class="accessoriesWrapper"></div>
     </div>
   </main>
-  <hr />
-  <article id="article">
-    <div class="article-card">
-      <img src="img/icons/free-delivery.png" alt="" />
-      <p>Free Shipping</p>
-    </div>
-    <div class="vertical"></div>
-    <div class="article-card">
-      <img src="img/icons/buy.png" alt="" />
-      <p>Cash On Delivery</p>
-    </div>
-    <div class="vertical"></div>
-    <div class="article-card">
-      <img src="img/icons/online-support.png" alt="" />
-      <p>Support 24/7</p>
-    </div>
-    <div class="vertical"></div>
-    <div class="article-card">
-      <img src="img/icons/pay.png" alt="" />
-      <p>Secure Payment</p>
-    </div>
-  </article>
-  <hr />
-
-
   <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -335,22 +261,20 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    AOS.init({});
-  </script>
-
+  <!-- firebase configs -->
+  <!-- The core Firebase JS SDK is always requi  and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
 
   <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-functions.js"></script>
-
   <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
 
+  <!-- TODO Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
 
   <script>
+    // Your web app's Firebase configuration
     var firebaseConfig = {
       apiKey: "AIzaSyCqv05eagwoCTjHiUVWLmTzHl-dDh2X5hI",
       authDomain: "ecommerce-f108f.firebaseapp.com",
@@ -361,18 +285,27 @@
       appId: "1:351954540442:web:2f34e401f4a9bb70c34c23",
       measurementId: "G-DZDK7934TE",
     };
+    // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
 
+    //make firebase auth and reference
     const auth = firebase.auth();
     const db = firebase.firestore();
-    const functions = firebase.functions();
 
-    console.log(firebase.analytics());
+      //firestore ssettings
+      // db.settings({ timestampsInSnapshots: true });
   </script>
-
+  <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var toolTip = document.querySelectorAll(".tooltipped");
+      var instances = M.Tooltip.init(toolTip);
+    });
+  </script>
   <script src="js/auth.js"></script>
+  <script src="js/accessories.js"></script>
 </body>
 
 </html>
